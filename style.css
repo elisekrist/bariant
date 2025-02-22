@@ -276,8 +276,12 @@ img {
 
 .window--3 {
   z-index: 10;
-  height: 271px;
-  overflow: auto;
+
+  .window__content {
+    overflow: auto;
+    height: 190px;
+    padding: 0;
+  }
   width: 500px;
 }
 
