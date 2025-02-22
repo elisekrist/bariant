@@ -470,10 +470,11 @@ header.homepage__header {
       0: -50%;
     }
     50% {
-      transform: scale(1.2) translateY(-50px);
+      transform: scale(1) translateY(-50px) rotate(90deg);
     }
     to {
       left: 100%;
+      transform: rotate(180deg);
     }
   }
 }
@@ -502,14 +503,16 @@ header.homepage__header {
   }
 }
 
-@keyframes move {
-  from {
-    0: -50%;
-  }
-  50% {
-    transform: scale(2) translateY(-50px);
-  }
-  to {
-    left: 100%;
+@media (prefers-color-scheme: light) {
+  @keyframes move {
+    from {
+      0: -50%;
+    }
+    50% {
+      transform: scale(2) translateY(-50px);
+    }
+    to {
+      left: 100%;
+    }
   }
 }
